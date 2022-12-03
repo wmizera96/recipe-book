@@ -2,14 +2,14 @@ using Application.Model;
 
 namespace Application
 {
-    public class Seed
+    public static class Seed
     {
-        public IEnumerable<Recipe> GetData() => _data;
+        public static IEnumerable<Recipe> GetData() => _data;
 
-        public Recipe GetRecipe(Guid id) => _data.FirstOrDefault(r => r.Id == id) ?? throw new Exception("Recipe not found");
+        public static Recipe GetRecipe(Guid id) => _data.FirstOrDefault(r => r.Id == id) ?? throw new Exception("Recipe not found");
 
 
-        private IEnumerable<Recipe> _data = new List<Recipe>
+        private static IEnumerable<Recipe> _data = new List<Recipe>
         {
             new Recipe
             {

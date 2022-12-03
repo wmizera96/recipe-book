@@ -6,5 +6,8 @@ public enum AmountUnit
     Kilogram,
     Mililitre,
     Litre,
-    Unit
+    Unit,
+    Pinch,
+    Slice,
+    TeaSpoon
 }
